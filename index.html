@@ -13,81 +13,141 @@
         <p class="header-texto">Grandes ofertas en comederos</p>
         <ul class="header-lista">
           <li>Español</li>
-          <li>$ARG</li>
+          <li>ARG$</li>
         </ul>
       </section>
       <section class="header-container-bottom">
-        <div>
           <p class="logo">
             <img src="img/Cat.png" alt="Logo gato" /><span
               class="texto-logo-top"
               >Front</span
             >Cat&Dog<img src="img/Dog.png" alt="" />
           </p>
-        </div>
         <nav>
           <ul class="nav-lista">
             <li>
-              <img src="img/pawprint 1.png" alt="huella" /><span
-                >Categorías</span
-              >
+              <span
+                >Categorías</span>
             </li>
             <li>
-              <img src="img/pawprint 1.png" alt="huella" /><span>Pets</span>
+              <span>Pets</span>
             </li>
             <li>
-              <img src="img/pawprint 1.png" alt="huella" /><span>Nosotros</span>
+              <span>Nosotros</span>
             </li>
             <li>
-              <img src="img/pawprint 1.png" alt="huella" /><span
-                >Contactanos</span
-              >
+              <span
+                >Contactanos</span>
             </li>
           </ul>
         </nav>
       </section>
-      <main>
-        <h1 class="bienvenida">¡Es un placer tenerte aquí!</h1>
-      </main>
-      <div class="texto-aviso">
-        <p class="aviso">¡Comederos en descuento!</p>
-        <br>
-        <span class="descripcion">COMEDEROS</span>
-      </div>
-    </header>
-    <div>
-      <h1 class="titulo-productos">Productos Destacados</h1>
-      <p class="seccion-productos">Comederos - Accesorios - Comida</p>
-      <img src="img/churrasquito.png" alt="churrasquito">
-      <p >Juguete Churrasquito</p>
-      <p class="precio-juguete">$150</p>
-      <img src="img/comedero.png" alt="churrasquito">
-      <p >Comedero para perro</p>
-      <p class="precio-juguete">$250</p>
-      <img src="img/Huesito.png" alt="churrasquito">
-      <p >Juguete Huesito</p>
-      <p class="precio-juguete">$650</p>
+      </header>
+      <section class="bienvenida">
+        <section>
+        <div class="textoBienvenida">¡Es un placer tenerte aquí!</div>
+        <div class="aviso">¡Comederos en descuento!</div>
+        <div class="descripcion"><p>COMEDEROS</p></div>
+      </section>
+    </section>
+    <div class="aux">
+    <img src="img/pawprint2.png" alt="HuesitoGrande" class="imgHueso">
+    <h1 class="titulo-productos">Productos Destacados</h1>
+    <div class="seccion-productos"><span>Comederos</span> <span>-</span> <span>Accesorios</span> <span>-</span> <span>Comida</span></div>
     </div>
-  </body>
+    <section class="productos">
+      <div>
+        <img src="img/churrasquito.png" alt="churrasquito">
+      <div class="infoProductos">
+        <p class="imgProducto">Juguete Churrasquito</p>
+        <p>$150</p>
+      </div>
+      </div>
+      <div>
+        <img src="img/comedero.png" alt="churrasquito">
+        <div class="infoProductos">
+          <p class="imgProducto">Comedero para perro</p>
+          <p>$250</p>
+        </div>
+      </div>
+      <div>
+        <img src="img/Huesito.png" alt="churrasquito">
+        <div class="infoProductos">
+          <p class="imgProducto">Juguete Huesito</p>
+          <p>$650</p>
+        </div>
+      </div>
+    </section>
+    <article class="contacto">
+      <h2>Contáctanos</h2>
+      <form action="estilos.css">
+        <div>
+        <input type="text" class="datos" name="nombre" id="nombre" placeholder="Nombre y Apellido">
+        <input type="text" class="datos" name="correo" id="correo" placeholder="Ingresá tu correo electronico">
+        <input type="text" class="datos" name="tel" id="tel" placeholder="Telefono">
+        </div>
+
+        <div class="botonesContacto">
+        <button type="reset" class="boton">Resetear</button>
+        <button type="submit" class="boton">Enviar</button>
+        </div>
+        </form>
+        <!--<div class="datosContacto">
+          <p>Nombre y Apellido</p>
+          <p>Ingresa tu correo electrónico</p>
+          <p>Teléfono</p>
+        </div>
+        <div class="botonesContacto">
+          <p class="resetear">Resetear</p>
+          <p class="enviar">Enviar</p>
+        </div> !-->      
+    </article>
+    <article class="suscripcion">
+    <div class="novedades">
+      <img src="img/Group (1).png" alt="imgNov"> 
+      <span>Suscribete para más novedades</span>
+    </div>
+    <div class="ingresaCorreo">
+      <input type="text" name="sub" placeholder="Ingresá tu correo electronico">
+      <button class="botonSuscribirse">Suscribirme</button>
+      <!--<p class="escribirCorreo">Ingresá tu correo electronico</p>
+      <p class="botonSuscribirse">Suscribirme</p>!-->
+    </div>
+    </article>
   <footer>
-    <p class="novedades"> <img src="img/Group (1).png" alt=""> <span>Suscribete para mas novedades</span>
-    </p>
     <section class="informacion-final">
+      <div>
+    <div class="localidad">
     <img src="img/Icono.png" alt="ubicacion">
+    <div class="texto">
     <h2>Localidad</h2>
     <p>Calle - provinicia</p>
+    </div>
+    </div>
+    <div class="telefono">
     <img src="img/Icono telefono.png" alt="telefono">
+    <div class="texto">
     <h2>Número de teléfono</h2>
     <p>15-111-111-111</p>
+    </div>
+    </div>
+    <div class="correo">
     <img src="img/Icono (1).png" alt="email">
+    <div class="texto">
     <h2>Correo Electrónico</h2>
     <p>Sarasa@msn.com</p>
+    </div>
+    </div>
+    </div>
+    <div class="logoFinal">
     <img  class="logo-final" src="img/Cat.png" alt="Logo gato" /><span
               class="texto-logo-final"
               >Front</span>
               <span class="texto-logo-final2"
             >Cat&Dog</span><img src="img/Dog.png" alt="logo perro" />
     </section>
+  </div>
     <p class="aclaracionFinal">Todos los derechos reservados Front End</p>
   </footer>
+  </body>
 </html>

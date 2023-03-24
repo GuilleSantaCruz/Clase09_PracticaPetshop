@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family:'Roboto';
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* header */
@@ -12,20 +13,40 @@
   background-color: #222222;
   color: #f3f3f3;
   font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+}
+
+.header-texto{
+  margin-left: 100px;
 }
 
 .header-lista {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 25px;
+}
+
+.header-lista li{
+  margin-left: 20px;
 }
 
 .header-container-bottom {
   background-color: #f0a83e;
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   font-weight: bold;
   color: #ffffff;
   font-size: 20px;
+  margin-left: 50px;
 }
 
 .texto-logo-top {
@@ -36,81 +57,306 @@
   list-style: none;
   color: #ffffff;
   font-size: 13px;
+  display: flex;
+  margin-right: 50px;
 }
 
-/* main */
+.nav-lista li{
+  margin-right: 25px;
+}
+
+li span::before{
+  content: url(/img/pawprint\ 1.png) " ";
+}
+
+/* bienvenida */
 
 .bienvenida {
-  margin-top: 50px;
-  padding: 20px;
-  text-align: center;
-}
-
-.texto-aviso{
-  background-image: url(/Clase09_PracticaPetshop/img/bowl-and-pet-daities-on-green-background\ 1.png);
-  height: 660px;
+  background-image: url(/img/bowl-and-pet-daities-on-green-background\ 1.png);
+  height: 90vh;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.bienvenida div{
+  margin-right: 40px;
+}
+
+.bienvenida section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.textoBienvenida{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 365px;
+  height: 50px;
+  font-size: 30px;
+  background-color:#f3f3f3;
+  border-radius: 5px;
+  border: solid 3px #F0A83E;
+  color: #a36912;
 }
 
 .aviso{
-  margin-top: 10px;
   color: #3C2313;
-  text-align: center;
+  margin-top: 15px;
 }
 
 .descripcion{
   background-color: #f0a83e;
   color: #f3f3f3;
+  width: 141px;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.titulo-productos{
+  text-align: center;
+}
+
+.aux{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.aux h1{
   margin-top: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.seccion-productos{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #8A8787;
+}
+
+.seccion-productos span{
+  margin-left: 10px;
+}
+
+.imgHueso{
+  width: 67px;
+  height: 71px;
 }
 
 /* productos */
 
-.titulo-productos{
-  margin-top: 50px;
-  font-weight: bolder;
+
+.productos{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  
 }
 
-.seccion-productos{
-  color: #666666;
-  margin-top: 50px;
-  margin-bottom: 20px;
+.productos div{
+  background-color: #faf9f5;
 }
-.precio-juguete{
-  color: #F0A83E;
-  font-weight: bolder;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+.infoProductos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  color: #f0a83e;
+}
+
+.infoProductos .imgProducto{
+  color: #3C2313;
+}
+
+/* contacto */
+
+.contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.contacto h2{
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #3C2313;
+  font-weight: bold;
+}
+
+form div{
+  display: flex;
+  flex-direction: column;
+}
+
+.datos{
+  border-radius: 15px;
+  width: 340px;
+  height: 45px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  background-color: #3C2313;
+  color: #ffffff;
+  border: #3C2313;
+}
+
+input[type="text"]:active{
+  color: #faf9f5;
+}
+
+.botonesContacto{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.botonesContacto{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.boton{
+  width: 110px;
+  height: 34px;
+  margin-left: 5px;
+}
+
+button[type="submit"]{
+  border-radius: 15px;
+  background-color: #f0a83e;
+  color: #ffffff;
+  border: #F0A83E;
+}
+
+button[type="reset"]{
+  border-radius: 15px;
+  background-color: #8A8787;
+  color: #ffffff;
+  border: #8A8787;
+}
+
+
+/*Suscripcion*/
+
+.suscripcion{
+  background-color: #f0a83e;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suscripcion img {
+  width: 40px;
+  height: 20.28px;
+}
+
+.suscripcion span{
+  text-align: 20px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.novedades{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.ingresaCorreo{
+  margin-right: 15px;
+}
+
+input[name="sub"]{
+  height: 40px;
+  width: 346px;
+  padding-left: 15px;
+  border-radius: 15px;
+  border: #f0f2f5;
+  margin-right: 15px;
+}
+
+input[name="sub"]:focus{
+  background-color: #e4e6e8;
+  border: #ffffff;
+
+}
+input[name="sub"]:hover{
+  background-color: #e4e6e8;
+}
+
+.botonSuscribirse{
+  width: 100px;
+  height: 40px;
+  border-radius: 17px;
+  background-color: #3C2313;
+  color: #ffffff;
+  border: #3C2313;
 }
 
 /* footer */
-.novedades{
-  background-color: #f0a83e;
-}
-
-.novedades img{
-  margin: 10px;
-}
-
-.novedades span{
-  color: #ffffff;
-  font-size: 20px;
-}
 
 .informacion-final{
   background-color:#3C2313 ;
+  padding-left: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.localidad{
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.telefono{
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.correo{
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.texto{
+  padding-left: 15px;
 }
 
 footer h2{
-  margin-top: 30px;
-  margin-bottom: 30px;
   color: #f3f3f3;
 }
 
 footer section p{
   color: #8A8787;
+}
+
+.logoFinal{
+  padding-right: 65px;
 }
 .texto-logo-final{
   color: white;
@@ -126,6 +372,12 @@ footer section p{
   background-color: #F0A83E;
   color: #ffffff;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .header-container-bottom{
+    
+  }
 }
 
 
